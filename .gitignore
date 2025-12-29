@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# ML generated files
+database/*.pkl
+database/*.csv
+
+# Image data
+images/
+
+# OS files
+.DS_Store
+Thumbs.db
