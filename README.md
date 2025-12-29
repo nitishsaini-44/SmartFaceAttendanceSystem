@@ -18,9 +18,7 @@ Smart FaceAttendance/
 │ └── students.csv
 │
 ├── images/
-│ ├── mummy.jpg
-│ ├── Nitish.jpg
-│ └── papa.jpg
+│ ├── image.jpg
 │
 ├── models/
 │ └── insightface_model.py
