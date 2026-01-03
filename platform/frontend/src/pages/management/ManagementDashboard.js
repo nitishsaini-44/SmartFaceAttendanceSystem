@@ -67,18 +67,22 @@ const ManagementDashboard = () => {
   const fetchTodayAttendance = async () => {
     try {
       const response = await api.get('/face-recognition/attendance');
-      setTodayAttendance(response.data || []);
+      const data = response.data;
+      setTodayAttendance(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error('Error fetching today attendance:', error);
+      setTodayAttendance([]);
     }
   };
 
   const fetchRecentUsers = async () => {
     try {
       const response = await api.get('/users?limit=5&sort=-createdAt');
-      setRecentUsers(response.data?.slice(0, 5) || []);
+      const data = response.data;
+      setRecentUsers(Array.isArray(data) ? data.slice(0, 5) : []);
     } catch (error) {
       console.error('Error fetching recent users:', error);
+      setRecentUsers([]);
     }
   };
 
