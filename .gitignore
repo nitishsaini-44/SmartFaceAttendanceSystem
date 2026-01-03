@@ -1,9 +1,11 @@
 # Virtual environment
 .venv/
+venv/
 
 # Python cache
 __pycache__/
 *.pyc
+*.py[cod]
 
 # ML generated files
 database/*.pkl
@@ -15,3 +17,27 @@ images/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Node.js
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.idea/
+.vscode/
