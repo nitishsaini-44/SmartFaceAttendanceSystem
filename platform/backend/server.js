@@ -28,6 +28,7 @@ app.use('/api/performance', require('./routes/performanceRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/classes', require('./routes/classRoutes'));
 app.use('/api/face-recognition', require('./routes/faceRecognitionRoutes'));
+app.use('/api/ai', require('./routes/aiRoutes'));
 
 // Health check
 app.get('/api/health', (req, res) => {
